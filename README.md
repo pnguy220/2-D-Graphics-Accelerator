@@ -39,7 +39,7 @@ make SIM=icarus TOPLEVEL=framebuffer MODULE=test_framebuffer VERILOG_SOURCES=fra
 make SIM=icarus TOPLEVEL=gpu_top MODULE=test_gpu_top VERILOG_SOURCES="gpu_top.sv draw_engine.sv framebuffer.sv"
 ```
 
-The top-level tests generate `gpu_output.png`, `checkerboard.png`, and `vertical_stripes.png` in the current working directory. `gpu_output.png` contains the `CAL HACKS` scene. The Makefile currently uses Cocotb's legacy `MODULE` variable; Cocotb 2.x may print a deprecation warning, but the tests still run.
+The top-level tests generate `calhacks.png`, `checkerboard.png`, and `vertical_stripes.png` in the current working directory. `calhacks.png` contains the `CAL HACKS` scene. The Makefile currently uses Cocotb's legacy `MODULE` variable; Cocotb 2.x may print a deprecation warning, but the tests still run.
 
 ## Project files
 

@@ -14,7 +14,7 @@ def rgb332_to_rgb888(pixel):
     )
 
 
-def save_framebuffer(pixels, filename="gpu_output.png", scale=8):
+def save_framebuffer(pixels, filename="calhacks.png", scale=8):
     """Convert 4096 RGB332 pixels to RGB888 and save a scaled PNG."""
     if len(pixels) != 4096:
         raise ValueError(f"expected 4096 pixels, received {len(pixels)}")

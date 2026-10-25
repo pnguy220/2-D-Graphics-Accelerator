@@ -149,7 +149,7 @@ async def reads_initialized_full_framebuffer(dut):
         )
 
     # Save the simulated framebuffer as an 8x nearest-neighbor PNG.
-    output_path = save_framebuffer(pixels, "gpu_output.png")
+    output_path = save_framebuffer(pixels, "calhacks.png")
     dut._log.info("Saved rendered framebuffer to %s", output_path)
 
 

@@ -52,7 +52,7 @@ The same-address test expects the old value at the collision edge and the newly 
 - An 8×8 checkerboard made from 8×8-pixel tiles.
 - 64 alternating vertical stripes, each one framebuffer column wide.
 
-Each image test initializes the full framebuffer before reading it. The resulting 512×512 RGB images are `gpu_output.png`, `checkerboard.png`, and `vertical_stripes.png`.
+Each image test initializes the full framebuffer before reading it. The resulting 512×512 RGB images are `calhacks.png`, `checkerboard.png`, and `vertical_stripes.png`.
 
 ## Interpreting results
 
