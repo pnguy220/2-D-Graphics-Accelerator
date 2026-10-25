@@ -30,13 +30,13 @@ From the project root, activate `.venv` and choose the test target:
 
 ```bash
 # Draw-engine unit tests (the Makefile default)
-make SIM=icarus
+make
 
 # Framebuffer unit tests
-make SIM=icarus TOPLEVEL=framebuffer MODULE=test_framebuffer VERILOG_SOURCES=framebuffer.sv
+make TOPLEVEL=framebuffer MODULE=test_framebuffer VERILOG_SOURCES=framebuffer.sv
 
 # Top-level integration tests and PNG generation
-make SIM=icarus TOPLEVEL=gpu_top MODULE=test_gpu_top VERILOG_SOURCES="gpu_top.sv draw_engine.sv framebuffer.sv"
+make TOPLEVEL=gpu_top MODULE=test_gpu_top VERILOG_SOURCES="gpu_top.sv draw_engine.sv framebuffer.sv"
 ```
 
 The top-level tests generate `calhacks.png`, `checkerboard.png`, and `vertical_stripes.png` in the current working directory. `calhacks.png` contains the `CAL HACKS` scene. The Makefile currently uses Cocotb's legacy `MODULE` variable; Cocotb 2.x may print a deprecation warning, but the tests still run.

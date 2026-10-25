@@ -14,13 +14,13 @@ From the project root:
 
 ```bash
 # Draw-engine directed and randomized tests
-make SIM=icarus
+make
 
 # Framebuffer tests
-make SIM=icarus TOPLEVEL=framebuffer MODULE=test_framebuffer VERILOG_SOURCES=framebuffer.sv
+make TOPLEVEL=framebuffer MODULE=test_framebuffer VERILOG_SOURCES=framebuffer.sv
 
 # GPU integration tests; also creates the PNG outputs
-make SIM=icarus TOPLEVEL=gpu_top MODULE=test_gpu_top VERILOG_SOURCES="gpu_top.sv draw_engine.sv framebuffer.sv"
+make TOPLEVEL=gpu_top MODULE=test_gpu_top VERILOG_SOURCES="gpu_top.sv draw_engine.sv framebuffer.sv"
 ```
 
 Build outputs and generated images are written relative to the current working directory. Run from the project root to keep them there.
