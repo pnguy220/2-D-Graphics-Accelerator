@@ -1,6 +1,6 @@
-# PixelCore 2D GPU
+# 2D Graphics Accelerator
 
-PixelCore is a learning-oriented 2D graphics accelerator written in SystemVerilog. Its first version accepts rectangle commands, writes RGB332 pixels to a 64×64 framebuffer, and can render simulated framebuffer contents to PNG files.
+This project is a learning-oriented 2D graphics accelerator written in SystemVerilog. Its first version accepts rectangle commands, writes RGB332 pixels to a 64×64 framebuffer, and can render simulated framebuffer contents to PNG files.
 
 ## Features
 
